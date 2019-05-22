@@ -2,7 +2,10 @@
   <div class="container">
     <span v-show="filter" class="search">
       Search for hashtag: {{tag}}
-      <a href="/" style="color: red; cursor: pointer;">Return</a>
+      <a
+        @click="filter = false"
+        style="color: red; cursor: pointer;"
+      >Return</a>
     </span>
     <div class="notes-grid" ref="grid">
       <note-item v-for="note in filteredNotes" :key="note.messageID" :note="note"/>
