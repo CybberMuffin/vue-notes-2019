@@ -11,7 +11,6 @@
 import NotesHeader from "@/components/NotesHeader.vue";
 import NotesEditor from "@/components/NotesEditor.vue";
 import NotesGrid from "@/components/NotesGrid.vue";
-import NotesSearch from "@/components/NotesSearch.vue";
 
 import { bus } from "../src/bus";
 
@@ -23,8 +22,7 @@ export default {
   components: {
     NotesHeader,
     NotesEditor,
-    NotesGrid,
-    NotesSearch
+    NotesGrid
   },
 
   data: () => ({
